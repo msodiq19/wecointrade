@@ -1,0 +1,796 @@
+/* general styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #263853;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+
+/* aside styling */
+aside{
+    width: 20%;
+    min-height: 100vh;
+    background-color: #222d32;
+    color: #fff;
+}
+aside h3{
+    height: 2.5em;
+    font-size: 1em;
+    background-color: #347397;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+aside #img{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+aside .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #347397;
+    margin: 0.2em 1em;
+}
+aside nav{
+    max-height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+aside nav li,.drop-container{
+    padding: 0.7em 1em;
+    list-style: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+aside .m-nav li a,.drop-container a{
+    text-decoration: none;
+    color: #ccc;
+}
+li a .drop-btn{
+    float: right;
+}
+.drop-container{
+    background-color: #252527;
+    padding-left: 2em;
+    font-size: 14px;
+    display: none;
+}
+
+aside nav li:hover{
+    background-color: #18181a;
+    border-left: 2px solid #cc8a20;
+}
+
+.main-nav{
+    color: #ccc;
+}
+
+/* alternative aside section */
+.alt-aside{
+    width: 4.5%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;  
+}
+.alt-aside a,.alt-aside div{
+    margin-top: 0.7em;
+}
+.alt-aside nav{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.alt-aside nav a:hover{
+    color: #fff;
+}
+.alt-aside a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 0.3em 0.5em;
+}
+.alt-aside nav div{
+    background-color: #222d32;
+    width: 100%;
+    
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #18181a;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.res{
+    display: none;
+}
+
+/* main content section */
+main{
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+main section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* header styling */
+header{
+    width: 100%;
+    height: 2.5em;
+    background-color: #3c8dbc;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .bars{
+    cursor: pointer;
+    padding-left: 1em;
+}
+.hlist{
+    height: 100%;
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+header .hlist div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+header .hlist #profile{
+    flex-grow: 1.5;
+    justify-content: center;
+    padding:0 1em;
+}
+.hlist #profile .circle{
+    color: #347397;
+    background-color: #fff;
+    width: 0em;
+    height: 1.8em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+.drop-btn-msg:hover,.drop-btn-admin:hover{
+    background-color: #347397;
+    cursor: pointer;
+}
+.hlist .drop-list{
+    background-color: #344750;
+    color: #fff;
+    width: 15em;
+    height: 7em;
+    display: none;
+}
+.drop-list p,.drop-list .drop-box{
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drop-list > a{
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    height: 2em;
+}
+.admin a{
+    border: 1px solid #3591c7;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+}
+.admin a:hover{
+    background-color: #3c8dbc;
+    
+}
+.hlist .active{
+    display: block;
+}
+.msg{
+    position: absolute;
+    top: 3em;
+    right: 7em;
+}
+.admin{
+    position: absolute;
+    top: 3em;
+    right: 1.5em;
+}
+.expand{
+    width: 95.5%;
+}
+/* Dashboard styling */
+.dashboard{
+    width: 100%;
+    display: none;
+}
+.dashboard .dash{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.rows{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    margin: 1.5em auto;
+}
+
+.cards{
+    width: 23%;
+    height: 10em;
+    background-color: #347397;
+    color: #fff;
+    text-transform: capitalize;
+}
+.cards .card-body{
+    height: 8em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-body i{
+    font-size: 3.5em;
+}
+.card-body h3{
+    width: 50%;
+}
+.cards .card-foot{
+    height: 2em;
+    background-color: #28383f;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    text-transform: capitalize;
+    background-color: #cc8a20;
+    color: #fff;
+    width: 32%;
+    height: 6em;
+}
+h4{
+    height: 4em;
+    display: flex;
+    align-items: center;
+    padding: 0.3em 1em;
+}
+.box-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    background-color: #28383f;
+}
+.card-foot a,.box-foot a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Payment, Settings and Security */
+.row{
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5em auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.stats,.setting,.payment,.payment-stats{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+.stats-head,.setting-head,.payment-head,.h-payment-stats{
+    padding: 1em;
+    text-transform: capitalize;
+    color: #fff;
+}
+.stats-body,.setting-body,.payment-body,.b-payment-stats{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;   
+}
+.stats-body{
+    cursor: pointer;
+}
+.stat{
+    width: 30%;
+    height: 6em;
+    background-color: #fff;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat-icon{
+    width: 40%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #cc8a20;
+}
+
+.stat-icon i{
+    font-size: 3em;
+}
+.stat-body{
+    text-transform: uppercase;
+    width: 55%;
+}
+
+.items,.payment-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #347397;
+    color: #fff;
+    height: 3em;
+    width: 22%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.payment-body .payment-box{
+    width: 30%;
+}
+.stat-box{
+    width: 47%;
+}
+
+/* Trades, Deposits,Withdrawals styling */
+.trades, .deposits, .withdrawals, .third-party, .manage-users, .change-passwd,.log-out{
+    display: none;
+    margin-bottom: 1em;
+}
+section .dash{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.dash p a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.temp{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: auto;
+    white-space: nowrap; 
+}
+.temp-title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3em;
+    border-bottom: 1px solid #bbb;
+}
+.temp-title h3{
+    text-transform: capitalize;
+    padding: 0.2em 0.7em;
+}
+.temp-form{
+    width: 100%;
+    height: 3em;
+    border-bottom: 1px solid #bbb;
+}
+.temp-form form{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temp .temp-table{
+    padding: 1em;
+}
+
+table{
+    width: 100%;
+}
+thead{
+    background-color: #3c8dbc;
+    text-transform: capitalize;
+    color: #fff;
+}
+th,td{
+    padding: 1em;
+    text-align: center;
+}
+table,thead,tbody,tr,th,td{
+    border-collapse: collapse;
+}
+tbody tr:nth-child(even){
+    background-color: #ccc;
+}
+td a{
+    display: block;
+    text-decoration: none;
+    background-color: #347397;
+    color: #fff;
+    margin: 0.2em;
+    padding: 0.3em 0.4em;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+td .accept{background-color: #00a65a;}
+td .reject{background-color: #dd4b39;}
+td .edit{background-color: #3591c7;}
+
+td.options a{
+    display: inline-block;
+}
+
+.pagination{
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+.pag{
+    display: flex;
+    border: 1px solid #000;
+    padding: 0.4em 0.8em;
+}
+.pag a{
+    padding: 0 0.5em;
+}
+.pag-num a{
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    border-left: 1px solid #000; 
+    cursor: pointer;
+}
+.pag-num a:last-child{
+    border-right: 1px solid #000;
+}
+
+/* Change Password Styling */
+.password-container{
+    width: 50%;
+    height: auto;
+    margin: 2em auto;
+    border: 2px solid #eb9f24;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1em;
+}
+.password-container h3{
+    text-transform: capitalize;
+    text-align: center;
+}
+.password-container form{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.password-container form input{
+    outline: none;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+}
+input[type="submit"]{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3591c7;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add Admin & Admin List, Notification and Profit/Loss Margin*/
+.admin-section, .notification,.profit-loss,.admin-list{
+    display: none;
+    margin-bottom: 1em;
+}
+
+.admin-cont-head,.notification-head,.profit-loss-head{
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+.admin-cont-body label,.notification-body label,.profit-loss label{
+    display: block;
+    text-transform: capitalize;
+    width: 80%;
+    margin:0.5em auto;
+}
+.admin-cont-body input,.notification-body textarea,.notification-body input,.profit-loss input{
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    padding: 0.7em;
+    border-radius: 0;
+}
+.windows a{
+    text-decoration: none;
+    background-color: #cc8a20;
+    color: #fff;
+    padding: 0.3em 0.6em;
+}
+
+/* user statistics styling */
+.active-users,.blocked-users{
+    display: none;
+    margin-bottom: 1em;
+}
+
+/* security,settings and admin styling */
+.app-settings,.payment-methods{
+    display: none;
+    margin-bottom: 1em;
+}
+.app-setting-head,.pay-method-head{
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.label-input{
+    margin: 1em auto;
+    width: 80%;
+}
+.label-input label{
+    display: inline-block;
+    width: 25%;
+    padding: 0.4em 0.7em;
+    border: 1px solid #000;
+}
+.label-input input{
+    display: inline-block;
+    width: 75%;
+    padding: 0.5em 0.8em;
+}
+.label-input + input{
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 0;
+}
+
+/* dashboard withdrawal styling */
+.confirmed-withdrawals,.pending1-withdrawals,.pending2-withdrawals,.user-edit,.generated-predictions,.unused-demo-predict,.unused-live-predict,.live-trade-history,.demo-trade-history{
+    display: none;
+    margin-bottom: 1em;
+}
+
+/* Edit user page styling */
+.user-edit-flex{
+    width: 95%;
+    margin: 0.5em auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-flex{
+    width: 23%;
+    height: 8em;
+    color: #fff;
+    background-color: #347397;
+    margin: 0.2em;
+    text-transform: capitalize
+}
+.edit-flex-cont{
+    height: 6em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.edit-flex-foot{
+    height: 2em;
+    background-color: #344750;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.edit-flex-foot i{
+    margin-left: 0.3em;
+}
+/* Modal styling */
+.modal{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width:100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    text-transform: capitalize;
+    border: 1px solid #aaa;
+    z-index: 1;
+    background-color: rgb(0,0,0,0.4);
+    box-shadow: rgb(139, 126, 126) 0.1em 0.1em;
+    animation: modal 1s ease-in;
+}
+.modal-content{
+    background-color: #fff;
+    margin: 2% 30%;
+    width: 50%;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.5);
+}
+.modal-head{
+    background-color: #cc8a20;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-head a{
+    cursor: pointer;
+}
+.modal-body{
+    padding: 1.5em;
+}
+.modal-foot{
+    background-color: #cc8a20;
+    padding: 1em;
+    text-align: right;
+}
+.modal-foot a{
+    background-color: #3591c7;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-foot a:hover{
+    padding: 0.3em 0.7em;
+}
+.modal-body label,.modal-body input,.modal-body select{
+    display: block;
+    width: 90%;
+    margin: 0.5em auto;
+}
+.modal-body input,.modal-body select{
+    padding: 0.5em 0.8em;
+    border-radius: 0;
+    border: 1px solid #888;
+    outline: none;
+}
+
+
+@keyframes modal{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* color */
+.green{background-color: #00a65a;}
+.orange{background-color: #cc8a20;}
+.red{background-color: #dd4b39;}
+.blue{background-color: #347397;}
+
+/* footer styling */
+footer{
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3c8dbc;
+    color: #fff;
+}
+
+
+
+/* Responsiveness styling */
+
+@media screen and (max-width : 768px) {
+    /* aside section responsiveness */
+    .main-aside{
+        display: none;
+    }
+    .alt-aside{
+        width: 7%;
+        display: flex;
+    }
+    main{
+        min-width: 93%;
+    }
+
+    /* Dashboard responsiveness */
+    .rows,.stats-body,.setting-body,.payment-body,.b-payment-stats{
+        flex-flow: row wrap;
+    }
+    .cards,.items{
+        width: 47%;
+        margin: 0.5em;
+    }
+    .box,.stat-box{
+        width: 80%;
+        margin: 0.5em;
+    }
+    .stat{
+        width: 70%;
+        margin: 0.5em;
+    }
+    .payment-body .payment-box{
+        width: 60%;
+        margin: 0.5em;
+    }
+    /* edit user responsiveness */
+    .edit-flex{
+        width: 47%;
+    }
+    
+}
+
+/* functionality styling */
+.current{
+    display: block;
+}
+.active{
+    display: block;
+}
+

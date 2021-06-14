@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/8109af2ed7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Coin Trade UI</title>
+</head>
+<body>
+    <!-- Content Wrapper -->
+    <div class="container">
+        <!-- Aside section -->
+            <aside class="main-aside">
+                <h3>menu</h3>
+                <div id="img"><div class="circle"><i class="fas fa-user"></i></div> Admin</div>
+                <nav class="main-nav">
+                        <li class="m-nav db"><a><i class="fas fa-tachometer-alt"></i> dashboard</a></li>
+                        <li class="m-nav td"><a><i class="fas fa-chart-pie"></i> trades</a></li>
+                        <li class="m-nav dp"><a><i class="fas fa-university"></i> deposits</a></li>
+                        <li class="m-nav wd"><a><i class="fas fa-money-bill-alt"></i> withdrawals</a></li>
+                        <li class="m-nav tps"><a><i class="fas fa-microchip"></i> third party software</a></li>
+                        <li class="m-nav mu"><a><i class="fas fa-users"></i> manage users <i class="fas fa-angle-left drop-btn"></i></a></li>
+                        <div class="drop-container"><a href="#">all users</a></div>
+                        <li class="m-nav cp"><a><i class="fas fa-key"></i> change password</a></li>
+                        <li class="m-nav lg"><a><i class="fas fa-sign-out-alt"></i> logout</a></li>
+                </nav>
+            </aside>
+            <aside class="alt-aside res">
+                    <a><i class="fas fa-home"></i></a>
+                    <div class="circle"><i class="fas fa-user"></i></div>
+                    <nav class="alt-nav">
+                        <a href="#" class="m-nav db tooltip"><i class="fas fa-tachometer-alt"></i><span class="tooltiptext">dashboard</span></a>
+                        <a href="#" class="m-nav td tooltip"><i class="fas fa-chart-pie"></i><span class="tooltiptext">trades</span></a>
+                        <a href="#" class="m-nav dp tooltip"><i class="fas fa-university"></i><span class="tooltiptext">deposits</span></a>
+                        <a href="#" class="m-nav wd tooltip"><i class="fas fa-money-bill-alt"></i><span class="tooltiptext">withdrawals</span></a>
+                        <a href="#" class="m-nav tps tooltip"><i class="fas fa-microchip"></i><span class="tooltiptext">third party software</span></a>
+                        <a href="#" class="m-nav mu tooltip"><i class="fas fa-users"></i><span class="tooltiptext">manage users</span></a>
+                        <div class="drop-container"><i class="fas fa-user"></i></div>
+                        <a href="#" class="m-nav cp tooltip"><i class="fas fa-key"></i><span class="tooltiptext">change password</span></a>
+                        <a href="#" class="m-nav lg tooltip"><i class="fas fa-sign-out-alt"></i><span class="tooltiptext">log out</span></a>
+                    </nav>
+            </aside>
+            <!-- main website content -->
+            <main class="">
+                <!-- Header section -->
+                <header>
+                    <div class="bars"><i class="fas fa-bars"></i></div>
+                    <div class="hlist">
+                        <div class="drop-btn-msg"><i class="fas fa-envelope"></i></div>
+                        <div class="drop-list msg">
+                            <p>you have messages</p>
+                            <a href="#">see all tickets</a>
+                        </div>
+                        <div id="profile" class="drop-btn-admin">
+                            <div class="circle"><i class="fas fa-user"></i></div>Admin
+                        </div>
+                        <div class="drop-list admin">
+                            <div class="drop-box">
+                                <div class="admin-circle"><i class="fas fa-user"></i></div>
+                            </div>
+                            <a href="#" id="sign-out">log out</a>
+                        </div>
+                    </div>
+                </header>
+                <!-- Dashboard Section -->
+                <section class="dashboard current">
+                    <div class="rows dash">
+                        <h2>adminstrator dashboard</h2>
+                        <p><a href="#"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a></p>
+                    </div>
+                    <div class="rows">
+                        <div class="cards">
+                            <div class="card-body">
+                                <h3>confirmed withdrawal</h3>
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="card-foot">
+                                <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                
+                        <div class="cards">
+                            <div class="card-body">
+                                <h3>deposits</h3>
+                                <i class="fas fa-money-bill-alt"></i>
+                            </div>
+                            <div class="card-foot">
+                                <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                
+                        <div class="cards">
+                            <div class="card-body">
+                                <h3>all users</h3>
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="card-foot">
+                                <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                
+                        <div class="cards">
+                            <div class="card-body">
+                                <h3>all trades</h3>
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="card-foot">
+                                <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="box">
+                           <h4>add new admin</h4>
+                           <div class="box-foot">
+                               <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>
+                           </div> 
+                        </div>
+                        <div class="box">
+                            <h4>write new notification message</h4>
+                            <div class="box-foot">
+                                <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>                        </div>
+                        </div>
+                        <div class="box">
+                            <h4>profit/loss margin</h4>
+                            <div class="box-foot">
+                                <p><a href="#">more info <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- user statistics section -->
+                    <div class="row stats">
+                        <div class="stats-head">
+                            <i class="fas fa-users"></i> user statistics
+                        </div>
+                        <div class="stats-body">
+                            <div class="stat">
+                                <div class="stat-icon green"><i class="fas fa-users"></i></div>
+                                <div class="stat-body">total users</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-icon orange"><i class="fas fa-user-check"></i></div>
+                                <div class="stat-body">active users</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-icon red"><i class="fas fa-ban"></i></div>
+                                <div class="stat-body">blocked users</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- settings, security and admin -->
+                    <div class="row setting">
+                        <div class="setting-head">
+                            <i class="fas fa-tools"></i> setting, security and admin
+                        </div>
+                        <div class="setting-body">
+                            <div class="items"><i class="fas fa-cog"></i> system setting & site login</div>
+                            <div class="items"><i class="fas fa-lock-open"></i> change password</div>
+                            <div class="items"><i class="fas fa-users"></i> admin list</div>
+                            <div class="items"><i class="fab fa-cc-mastercard"></i> payment method</div>
+                        </div>
+                    </div>
+                    <!-- payment reference -->
+                    <div class="row payment">
+                        <div class="payment-head"><i class="fas fa-money-check"></i> payment reference</div>
+                        <div class="payment-body">
+                            <div class="payment-box"><i class="fas fa-money-bill-alt"></i> Confirmed ROI Withdrawals</div>
+                            <div class="payment-box"><i class="fas fa-money-bill-alt"></i> Pending ROI Withdrawals</div>
+                            <div class="payment-box"><i class="fas fa-money-bill-alt"></i> Pending PIL Withdrawals</div>
+                        </div>
+                    </div>
+                    <!-- overall payment statistics -->
+                    <div class="row payment-stats">
+                        <div class="h-payment-stats"><i class="fas fa-money-bill"></i> overall payment statistics</div>
+                        <div class="b-payment-stats">
+                            <div class="stat stat-box">
+                                <div class="stat-icon"><i class="fas fa-money-bill-alt"></i></div>
+                                <div class="stat-body">total deposit payment <p>$0</p></div>
+                            </div>
+                            <div class="stat stat-box">
+                                <div class="stat-icon"><i class="fas fa-money-bill-alt"></i></div>
+                                <div class="stat-body">total withdrawal payment <p>$0</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Trades section -->
+                <section class="trades">
+                    <div class="rows dash">
+                        <h2>all trade history</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i class="fas fa-angle-right"></i> <i class="fas fa-users"></i> trades</p>
+                    </div>
+                    <div class="temp history">
+                        <div class="temp-title history-title">
+                            <h3>all trade history</h3>
+                            <p>showing 1 of all 1 trading history</p>
+                        </div>
+                        <div class="temp-form history-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries1">entries</label>
+                                    <select id="entries1" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search">search:</label>
+                                    <input type="search" name="search" id="search1">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table history-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>email</th>
+                                        <th>trade asset</th>
+                                        <th>trade in (secs)</th>
+                                        <th>trade amount</th>
+                                        <th>total trade amount</th>
+                                        <th>leverage</th>
+                                        <th>strike rate</th>
+                                        <th>%profit</th>
+                                        <th>expected profit</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test@gmail.com</td>
+                                        <td>BTCUSDT</td>
+                                        <td>60</td>
+                                        <td>$100</td>
+                                        <td>$500</td>
+                                        <td>25x</td>
+                                        <td>35.43</td>
+                                        <td>8%</td>
+                                        <td>$20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Deposit section -->
+                <section class="deposits">
+                    <div class="rows dash">
+                        <h2>deposits</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i class="fas fa-angle-right"></i> <i
+                                class="fas fa-users"></i> deposits</p>
+                    </div>
+                    <div class="temp deposit">
+                        <div class="temp-title deposit-title">
+                            <h3>Deposits</h3>
+                            <p>1 deposit(s)</p>
+                        </div>
+                        <div class="temp-form deposit-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries2">entries</label>
+                                    <select id="entries2" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search2">search:</label>
+                                    <input type="search" name="search" id="search2">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table deposit-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>TRX ID</th>
+                                        <th>username</th>
+                                        <th>email</th>
+                                        <th>amount</th>
+                                        <th>payment mode</th>
+                                        <th>plan select</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>45bc89a43d</td>
+                                        <td>deeney</td>
+                                        <td>user@gmail.com</td>
+                                        <td>$100</td>
+                                        <td>USD</td>
+                                        <td>-</td>
+                                        <td>pending</td>
+                                        <td>12-07-21 05:34pm</td>
+                                        <td class="action">
+                                            <a class="accept">accept deposit</a>
+                                            <a class="reject">reject deposit</a>
+                                            <a class="edit">edit deposit</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Withdrawals Section -->
+                <section class="withdrawals">
+                    <div class="rows dash">
+                        <h2>withdrawals</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i class="fas fa-angle-right"></i> <i
+                                class="fas fa-users"></i> withdrawals</p>
+                    </div>
+                    <div class="temp withdraw">
+                        <div class="temp-title withdraw-title">
+                            <h3>Withdrawals</h3>
+                            <p>1 withdrawal</p>
+                        </div>
+                        <div class="temp-form withdraw-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries3">entries</label>
+                                    <select id="entries3" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search3">search:</label>
+                                    <input type="search" name="search" id="search3">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table withdraw-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>TRX ID</th>
+                                        <th>username</th>
+                                        <th>email</th>
+                                        <th>amount</th>
+                                        <th>payment method</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>477bcd7025fb935a</td>
+                                        <td>Larry</td>
+                                        <td>test@gmail.com</td>
+                                        <td>$100</td>
+                                        <td>bitcoin</td>
+                                        <td>pending</td>
+                                        <td>11-05-2021 06:35pm</td>
+                                        <td class="action">
+                                            <a class="accept">accept payment</a>
+                                            <a class="reject">reject payment</a>
+                                            <a class="edit">edit time</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Third party software section -->
+                <section class="third-party">
+                    <div class="rows dash">
+                        <h2>third party software</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i class="fas fa-angle-right"></i> <i
+                                class="fas fa-users"></i> third party software</p>
+                    </div>
+                    <div class="temp third-party">
+                        <div class="temp-title third-party-title">
+                            <h3>3 third party software</h3>
+                            <p>showing 3 of 3 third party softwares</p>
+                        </div>
+                        <div class="temp-table third-party-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>license keys</th>
+                                        <th>status</th>
+                                        <th>used by</th>
+                                        <th>created date</th>
+                                        <th>expired date</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                       <td>3</td>
+                                       <td>34bc295fa017</td>
+                                       <td>used</td>
+                                       <td>testuser@gmail.com</td>
+                                       <td>15-05-2021 09:35pm</td>
+                                       <td>30-06-2021 07:20am</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>64bc295fa017a</td>
+                                        <td>used</td>
+                                        <td>user@gmail.com</td>
+                                        <td>20-04-2021 12:00pm</td>
+                                        <td>25-05-2021 7:15am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>81bc375fa017d</td>
+                                        <td>used</td>
+                                        <td>larry@gmail.com</td>
+                                        <td>02-01-2021 11:20am</td>
+                                        <td>14-02-2021 08:05pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Manage users section -->
+                <section class="manage-users">
+                    <div class="rows dash">
+                        <h2>manage users</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i class="fas fa-angle-right"></i> <i
+                                class="fas fa-users"></i> manage users</p>
+                    </div>
+                    <div class="temp manage-user">
+                        <div class="temp-title manage-user-title">
+                            <h3>all users</h3>
+                            <p>showing 1 of 1 users</p>
+                        </div>
+                        <div class="temp-form manage-user-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries4">entries</label>
+                                    <select id="entries4" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search4">search:</label>
+                                    <input type="search" name="search" id="search4">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table manage-user-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>fullName</th>
+                                        <th>email</th>
+                                        <th>password</th>
+                                        <th>package name</th>
+                                        <th>live balance</th>
+                                        <th>demo balance</th>
+                                        <th>country</th>
+                                        <th>options</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>bill gate</td>
+                                        <td>test@gmail.com</td>
+                                        <td>password</td>
+                                        <td>platinum</td>
+                                        <td>45.05</td>
+                                        <td>120</td>
+                                        <td>nigeria</td>
+                                        <td class="options">
+                                            <a href="#" class="edit edit-user"><i class="fas fa-edit"></i></a>
+                                            <a href="#" class="reject del-user"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- change password section -->
+                <section class="change-passwd">
+                    <div class="rows dash">
+                        <h2>change password</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i class="fas fa-angle-right"></i> <i
+                                class="fas fa-users"></i> change password</p>
+                    </div>
+                    <div class="password-container">
+                        <h3><i class="fas fa-key"></i> change password</h3>
+                        <form action="">
+                            <input type="password" name="old" id="old" placeholder="Enter your current password">
+                            <input type="password" name="new" id="new" placeholder="Enter your new password">
+                            <input type="password" name="confirm" id="confirm" placeholder="Confirm your new password">
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Log out section -->
+                <section class="log-out">
+                    
+                </section>
+
+                <!-- Add Admin section -->
+                <section class="admin-section">
+                    <div class="rows dash">
+                        <h2>add new admin</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> <a class="admin-link">admin list</a></p>
+                    </div>
+                    <div class="temp admin-cont">
+                        <div class="temp-title admin-cont-head">
+                            <h3>add new admin</h3>
+                            <div class="windows">
+                                <a href="#" class="minimize">-</a>
+                                <a href="#" class="close">x</a>
+                            </div>
+                        </div>
+                        <div class="admin-cont-body">
+                            <form action="">
+                                <label for="username">username</label>
+                                <input type="text" name="username" id="username" placeholder="Username">
+                                <label for="fullname">fullName</label>
+                                <input type="text" name="fullname" id="fullname" placeholder="FullName">
+                                <label for="email">email</label>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <label for="pswd">password</label>
+                                <input type="password" name="pswd" id="pswd" placeholder="Password">
+                                <input type="submit" value="create admin">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Message/Notification section -->
+                <section class="notification">
+                    <div class="rows dash">
+                        <h2>write notification</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> write notification</p>
+                    </div>
+                    <div class="temp notification-cont">
+                        <div class="temp-title notification-head">
+                            <h3>notification</h3>
+                            <div class="windows">
+                                <a href="#" class="minimize">-</a>
+                                <a href="#" class="close">x</a>
+                            </div>
+                        </div>
+                        <div class="notification-body">
+                            <label for="message">message</label>
+                            <textarea name="message" id="message" cols="45" rows="15" placeholder="Enter your information"></textarea>
+                            <input type="submit" value="save notification">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- profit/Loss margin -->
+                <section class="profit-loss">
+                    <div class="rows dash">
+                        <h2>profit/loss margin</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> profit/loss margin</p>
+                    </div>
+                    <div class="temp profit-loss-cont">
+                        <div class="temp-title profit-loss-head">
+                            <h3>profit/Loss margin</h3>
+                            <div class="windows">
+                                <a href="#" class="minimize">-</a>
+                                <a href="#" class="close">x</a>
+                            </div>
+                        </div>
+                        <div class="profit-loss-body">
+                            <form action="">
+                                <label for="profit-margin">profit margin</label>
+                                <input type="number" name="profit-margin" id="profit-margin" min="2.5" max="5">
+                                <label for="loss-margin">loss margin</label>
+                                <input type="number" name="loss-margin" id="loss-margin" min="-4.5" max="-2.5">
+                                <input type="submit" value="set profit/loss margin">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Admin List Section -->
+                <section class="admin-list">
+                    <div class="rows dash">
+                        <h2>admin list</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> admin list</p>
+                    </div>
+                    <div class="temp admin-list-cont">
+                        <div class="temp-title admin-list-head">
+                            <h3>admin list</h3>
+                            <p>showing 1 of 1 admins</p>
+                        </div>
+                        <div class="temp-form admin-list-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries5">entries</label>
+                                    <select id="entries5" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search5">search:</label>
+                                    <input type="search" name="search" id="search5">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table admin-list-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>username</th>
+                                        <th>fullName</th>
+                                        <th>email</th>
+                                        <th>options</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>larry</td>
+                                        <td>david smith</td>
+                                        <td>admin@gmail.com</td>
+                                        <td class="options">
+                                           <a href="#" class="edit edit-admin"><i class="fas fa-edit"></i></a>
+                                           <a href="#" class="reject del-admin"><i class="fas fa-trash-alt"></i></a> 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- user statistics -->
+                <section class="active-users">
+                    <div class="rows dash">
+                        <h2>active users</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> active users</p>
+                    </div>
+                    <div class="temp manage-user">
+                        <div class="temp-title manage-user-title">
+                            <h3>active users</h3>
+                            <p>showing 1 of 1 active users</p>
+                        </div>
+                        <div class="temp-form manage-user-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries6">entries</label>
+                                    <select id="entries6" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search6">search:</label>
+                                    <input type="search" name="search" id="search6">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table manage-user-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>fullName</th>
+                                        <th>email</th>
+                                        <th>password</th>
+                                        <th>package name</th>
+                                        <th>live balance</th>
+                                        <th>demo balance</th>
+                                        <th>country</th>
+                                        <th>options</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>bill gate</td>
+                                        <td>test@gmail.com</td>
+                                        <td>password</td>
+                                        <td>platinum</td>
+                                        <td>45.05</td>
+                                        <td>120</td>
+                                        <td>nigeria</td>
+                                        <td class="options">
+                                            <a href="#" class="edit edit-user"><i class="fas fa-edit"></i></a>
+                                            <a href="#" class="reject del-user"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="blocked-users">
+                    <div class="rows dash">
+                        <h2>blocked users</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> blocked users</p>
+                    </div>
+                    <div class="temp manage-user">
+                        <div class="temp-title manage-user-title">
+                            <h3>blocked users</h3>
+                            <p>showing 1 of 1 blocked users</p>
+                        </div>
+                        <div class="temp-form manage-users-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries7">entries</label>
+                                    <select id="entries7" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search7">search:</label>
+                                    <input type="search" name="search" id="search7">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table manage-user-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>fullName</th>
+                                        <th>email</th>
+                                        <th>password</th>
+                                        <th>package name</th>
+                                        <th>live balance</th>
+                                        <th>demo balance</th>
+                                        <th>country</th>
+                                        <th>options</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>bill gate</td>
+                                        <td>test@gmail.com</td>
+                                        <td>password</td>
+                                        <td>platinum</td>
+                                        <td>45.05</td>
+                                        <td>120</td>
+                                        <td>nigeria</td>
+                                        <td class="options">
+                                            <a href="#" class="edit edit-user"><i class="fas fa-edit"></i></a>
+                                            <a href="#" class="reject del-user"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- App settings section -->
+                <section class="app-settings">
+                    <div class="rows dash">
+                        <h2>app settings</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> app settings</p>
+                    </div>
+                    <div class="temp app-setting">
+                        <div class="temp-title app-setting-head">
+                            <h3>app settings</h3>
+                            <div class="windows">
+                                <a href="#" class="minimize">-</a>
+                                <a href="#" class="close">x</a>
+                            </div>
+                        </div>
+                        <div class="app-setting-body">
+                            <form action="">
+                                <div class="label-input">
+                                    <label for="currency">currency sign</label>
+                                    <input type="text" name="sign" id="currency" value="$">
+                                </div>
+                                <div class="label-input">
+                                    <label for="commision">withdrawal commision</label>
+                                    <input type="text" name="commision" id="commision">
+                                </div>
+                                <div class="label-input">
+                                    <label for="fixed-rate">fixed dollar rate</label>
+                                    <input type="text" name="fixed-rate" id="fixed-rate">
+                                </div>
+                                <div class="label-input">
+                                    <label for="incubation">incubation date(month)</label>
+                                    <input type="text" name="incubation" id="incubation">
+                                </div>
+                                <input type="submit" value="set application parameters">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="payment-methods">
+                    <div class="rows dash">
+                        <h2>payment methods</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> payment methods</p>
+                    </div>
+                    <div class="temp payment-method">
+                        <div class="temp-title pay-method-head">
+                            <h3>payment methods</h3>
+                            <div class="windows">
+                                <a href="#" class="minimize">-</a>
+                                <a href="#" class="close">x</a>
+                            </div>
+                        </div>
+                        <div class="temp-form pay-method-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries8">entries</label>
+                                    <select id="entries8" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search8">search:</label>
+                                    <input type="search" name="search" id="search8">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table pay-method-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>payment coy</th>
+                                        <th>logo</th>
+                                        <th>deposit comm.</th>
+                                        <th>key id1</th>
+                                        <th>key id 2</th>
+                                        <th>currency</th>
+                                        <th>status</th>
+                                        <th>options</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                       <td>1</td>
+                                       <td>paypal</td>
+                                       <td></td>
+                                       <td>2</td>
+                                       <td>user@gmail.com</td>
+                                       <td>welcome</td>
+                                       <td>USD</td>
+                                       <td>active</td>
+                                       <td class="options">
+                                            <a class="edit"><i class="fas fa-edit"></i></a>
+                                            <a class="reject"><i class="fas fa-trash-alt"></i></a>
+                                       </td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- payment reference section -->
+                
+                <section class="confirmed-withdrawals">
+                    <div class="rows dash">
+                        <h2>confirmed withdrawals</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> confirmed withdrawals</p>
+                    </div>
+                    <div class="temp withdraw">
+                        <div class="temp-title withdraw-title">
+                            <h3>Withdrawals</h3>
+                            <p>1 confirmed withdrawal</p>
+                        </div>
+                        <div class="temp-form withdraw-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries9">entries</label>
+                                    <select id="entries9" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search9">search:</label>
+                                    <input type="search" name="search" id="search9">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table withdraw-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>TRX ID</th>
+                                        <th>username</th>
+                                        <th>email</th>
+                                        <th>amount</th>
+                                        <th>payment mode</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>477bcd7025fb935a</td>
+                                        <td>Larry</td>
+                                        <td>test@gmail.com</td>
+                                        <td>$100</td>
+                                        <td>bitcoin</td>
+                                        <td>processed</td>
+                                        <td>11-05-2021 06:35pm</td>
+                                        <td id="action">
+                                            <a class="reject">reject payment</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pending1-withdrawals">
+                    <div class="rows dash">
+                        <h2>pending ROI withdrawals</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> pending ROI withdrawals</p>
+                    </div>
+                    <div class="temp withdraw">
+                        <div class="temp-title withdraw-title">
+                            <h3>pending ROI Withdrawals</h3>
+                            <p>0 pending ROI withdrawal</p>
+                        </div>
+                        <div class="temp-form withdraw-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries10">entries</label>
+                                    <select id="entries10" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search10">search:</label>
+                                    <input type="search" name="search" id="search10">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table withdraw-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>username</th>
+                                        <th>email</th>
+                                        <th>amount</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-row">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Larry</td>
+                                        <td>test@gmail.com</td>
+                                        <td>$100</td>
+                                        <td>pending</td>
+                                        <td>11-05-2021 06:35pm</td>
+                                        <td id="action">
+                                            <a class="reject">reject payment</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pending2-withdrawals">
+                    <div class="rows dash">
+                        <h2>pending PIL withdrawals</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> pending PIL withdrawals</p>
+                    </div>
+                    <div class="temp withdraw">
+                        <div class="temp-title withdraw-title">
+                            <h3>pending PIL Withdrawals</h3>
+                            <p>0 pending PIL withdrawal</p>
+                        </div>
+                        <div class="temp-form withdraw-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries11">entries</label>
+                                    <select id="entries11" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search11">search:</label>
+                                    <input type="search" name="search" id="search11">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table withdraw-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>username</th>
+                                        <th>email</th>
+                                        <th>amount</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                        <th>action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Larry</td>
+                                        <td>test@gmail.com</td>
+                                        <td>$100</td>
+                                        <td>pending</td>
+                                        <td>11-05-2021 06:35pm</td>
+                                        <td id="action">
+                                            <a class="reject">reject payment</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- user edit section -->
+                <section class="user-edit">
+                    <div class="rows dash">
+                        <h2>view/edit</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> user edit page</p>
+                    </div>
+                    <div class="temp user-edit-cont">
+                        <div class="temp-title user-edit-head">
+                            <h3>view/edit</h3>
+                        </div>
+                        <div class="user-edit-flex">
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>live balance</h3>
+                                    <p>$45.05</p>
+                                </div>
+                                <div class="edit-flex-foot">add/subtract <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>demo balance</h3>
+                                    <p>$100</p>
+                                </div>
+                                <div class="edit-flex-foot">add/subtract <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>accept</h3>
+                                    <p>demo trade</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>view</h3>
+                                    <p>all predictions</p>
+                                </div>
+                                <div class="edit-flex-foot">more info <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex blue">
+                                <div class="edit-flex-cont">
+                                    <h3>view</h3>
+                                    <p>KYC document</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex blue">
+                                <div class="edit-flex-cont">
+                                    <h3>change</h3>
+                                    <p>password</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex blue">
+                                <div class="edit-flex-cont">
+                                    <h3>reset</h3>
+                                    <p>trade limit</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex blue">
+                                <div class="edit-flex-cont">
+                                    <h3>generate</h3>
+                                    <p>predictions</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex orange">
+                                <div class="edit-flex-cont">
+                                    <h3>view</h3>
+                                    <p>unused live predictions</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex orange">
+                                <div class="edit-flex-cont">
+                                    <h3>view</h3>
+                                    <p>unused demo predictions</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex orange">
+                                <div class="edit-flex-cont">
+                                    <h3>view</h3>
+                                    <p>live trading history</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex orange">
+                                <div class="edit-flex-cont">
+                                    <h3>view</h3>
+                                    <p>demo trading history</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>change</h3>
+                                    <p>user plan</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>verify</h3>
+                                    <p>user</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>set</h3>
+                                    <p>payment wallet</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                            <div class="edit-flex green">
+                                <div class="edit-flex-cont">
+                                    <h3>send</h3>
+                                    <p>email</p>
+                                </div>
+                                <div class="edit-flex-foot">click here <i class="fas fa-angle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- modal for rendering edited user -->
+                <section class="modal">
+                    <div class="modal-content">
+                        
+                    </div>
+                </section>
+                <!-- generated predictions -->
+                <section class="generated-predictions">
+                    <div class="rows dash">
+                        <h2>all generated predictions</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> generated predictions</p>
+                    </div>
+                    <div class="temp prediction">
+                        <div class="temp-title prediction-title">
+                            <h3>all generated predictions</h3>
+                            <p>showing 1 of 1 of all generated predictions</p>
+                        </div>
+                        <div class="temp-form prediction-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries12">entries</label>
+                                    <select id="entries12" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search12">search:</label>
+                                    <input type="search" name="search" id="search12">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table prediction-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>leverage</th>
+                                        <th>trade amount</th>
+                                        <th>trade type</th>
+                                        <th>account type</th>
+                                        <th>trade time</th>
+                                        <th>trade asset</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>50x</td>
+                                        <td>$1000</td>
+                                        <td>sell</td>
+                                        <td>live</td>
+                                        <td>120</td>
+                                        <td>BTCUSDT</td>
+                                        <td>used</td>
+                                        <td>10-03-21 04:20pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- unused demo predictions -->
+                <section class="unused-demo-predict">
+                    <div class="rows dash">
+                        <h2>unused demo predictions</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> unused demo predictions</p>
+                    </div>
+                    <div class="temp demo-prediction">
+                        <div class="temp-title demo-prediction-title">
+                            <h3>all unused demo predictions</h3>
+                            <p>showing 1 of 1 of all unused demo predictions</p>
+                        </div>
+                        <div class="temp-form demo-prediction-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries13">entries</label>
+                                    <select id="entries13" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search13">search:</label>
+                                    <input type="search" name="search" id="search13">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table demo-prediction-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>leverage</th>
+                                        <th>trade amount</th>
+                                        <th>trade type</th>
+                                        <th>account type</th>
+                                        <th>trade time</th>
+                                        <th>trade asset</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>50x</td>
+                                        <td>$1000</td>
+                                        <td>sell</td>
+                                        <td>live</td>
+                                        <td>120</td>
+                                        <td>BTCUSDT</td>
+                                        <td>used</td>
+                                        <td>10-03-21 04:20pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- unused live prediction -->
+                <section class="unused-live-predict">
+                    <div class="rows dash">
+                        <h2>unused live predictions</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> unused live predictions</p>
+                    </div>
+                    <div class="temp demo-prediction">
+                        <div class="temp-title demo-prediction-title">
+                            <h3>unused live predictions</h3>
+                            <p>showing 1 of 1 of all unused live predictions</p>
+                        </div>
+                        <div class="temp-form live-prediction-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries14">entries</label>
+                                    <select id="entries14" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search14">search:</label>
+                                    <input type="search" name="search" id="search14">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table demo-prediction-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>leverage</th>
+                                        <th>trade amount</th>
+                                        <th>trade type</th>
+                                        <th>account type</th>
+                                        <th>trade time</th>
+                                        <th>trade asset</th>
+                                        <th>status</th>
+                                        <th>created date</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>50x</td>
+                                        <td>$1000</td>
+                                        <td>sell</td>
+                                        <td>live</td>
+                                        <td>120</td>
+                                        <td>BTCUSDT</td>
+                                        <td>used</td>
+                                        <td>10-03-21 04:20pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--trading history -->
+                <section class="live-trade-history">
+                    <div class="rows dash">
+                        <h2>live trading history</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> live trading history</p>
+                    </div>
+                    <div class="temp live-trade">
+                        <div class="temp-title live-title">
+                            <h3>live trading history</h3>
+                            <p>showing 1 of all 1 live trading history</p>
+                        </div>
+                        <div class="temp-form live-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries15">entries</label>
+                                    <select id="entries15" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search15">search:</label>
+                                    <input type="search" name="search" id="search15">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table live-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>email</th>
+                                        <th>trade asset</th>
+                                        <th>trade in (secs)</th>
+                                        <th>trade amount</th>
+                                        <th>total trade amount</th>
+                                        <th>leverage</th>
+                                        <th>strike rate</th>
+                                        <th>%profit</th>
+                                        <th>expected profit</th>
+                                        <th>trade type</th>
+                                        <th>trade status</th>
+                                        <th>status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test@gmail.com</td>
+                                        <td>BTCUSDT</td>
+                                        <td>60</td>
+                                        <td>$100</td>
+                                        <td>$500</td>
+                                        <td>25x</td>
+                                        <td>35.43</td>
+                                        <td>8%</td>
+                                        <td>$20</td>
+                                        <td>live</td>
+                                        <td>proccessed</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="demo-trade-history">
+                    <div class="rows dash">
+                        <h2>demo trading history</h2>
+                        <p><a href="#" class="dash-home"><i class="fas fa-tachometer-alt"></i> adminstrator dashboard</a> <i
+                                class="fas fa-angle-right"></i> <i class="fas fa-users"></i> demo trading history</p>
+                    </div>
+                    <div class="temp demo-trade">
+                        <div class="temp-title demo-title">
+                            <h3>demo trading history</h3>
+                            <p>showing 1 of all 1 demo trading history</p>
+                        </div>
+                        <div class="temp-form demo-form">
+                            <form action="">
+                                <div class="btns">
+                                    <input type="button" value="Print">
+                                    <input type="button" value="Copy">
+                                    <input type="button" value="PDF">
+                                    <input type="button" value="CSV">
+                                    <input type="button" value="Columns">
+                                </div>
+                                <div class="input-fields">
+                                    <label for="entries16">entries</label>
+                                    <select id="entries16" name="entries">
+                                        <option value="5">5</option>
+                                        <option value="10" selected>10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="All">All</option>
+                                    </select>
+                                    <label for="search16">search:</label>
+                                    <input type="search" name="search" id="search16">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="temp-table demo-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>email</th>
+                                        <th>trade asset</th>
+                                        <th>trade in (secs)</th>
+                                        <th>trade amount</th>
+                                        <th>total trade amount</th>
+                                        <th>leverage</th>
+                                        <th>strike rate</th>
+                                        <th>%profit</th>
+                                        <th>expected profit</th>
+                                        <th>trade type</th>
+                                        <th>trade status</th>
+                                        <th>status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbody-rows">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>test@gmail.com</td>
+                                        <td>BTCUSDT</td>
+                                        <td>60</td>
+                                        <td>$100</td>
+                                        <td>$500</td>
+                                        <td>25x</td>
+                                        <td>35.43</td>
+                                        <td>8%</td>
+                                        <td>$20</td>
+                                        <td>live</td>
+                                        <td>proccessed</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination">
+                            <p class="pag-p"></p>
+                            <div class="pag">
+                                <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                                <div class="pag-num"></div>
+                                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Footer Section -->
+                <footer>
+                    <p>copyright &copy; 2021 Trade. All right reserved.</p>
+                </footer>
+            </main>
+            
+
+        </div>    
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
