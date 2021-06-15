@@ -110,11 +110,12 @@ aside nav li:hover{
     color: #ddd;
     padding: 0.3em 0.5em;
 }
-.alt-aside nav div{
+.alt-aside nav .drop-container{
     background-color: #222d32;
-    width: 100%;
-    
+    padding: 0;
+    text-align: center;
 }
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -375,7 +376,7 @@ h4{
     align-items: center;
     background-color: #347397;
     color: #fff;
-    height: 3em;
+    height: 4em;
     width: 22%;
     text-transform: capitalize;
     cursor: pointer;
@@ -562,13 +563,8 @@ input[type="submit"]{
     width: 80%;
     margin: 1em auto;
     padding: 0.7em;
+    border: 1px solid #888;
     border-radius: 0;
-}
-.windows a{
-    text-decoration: none;
-    background-color: #cc8a20;
-    color: #fff;
-    padding: 0.3em 0.6em;
 }
 
 /* user statistics styling */
@@ -745,6 +741,23 @@ footer{
 
 
 /* Responsiveness styling */
+@media screen and (max-width : 900px) {
+    .setting-body,.payment-body{
+        flex-flow: row wrap;
+    }
+    .card-body{
+        flex-flow: column-reverse nowrap;
+    }
+    .items{
+        width: 47%;
+        margin: 0.5em;
+    }
+    .payment-body .payment-box{
+        width: 70%;
+        margin: 0.5em;
+    }
+
+}
 
 @media screen and (max-width : 768px) {
     /* aside section responsiveness */
@@ -763,9 +776,12 @@ footer{
     .rows,.stats-body,.setting-body,.payment-body,.b-payment-stats{
         flex-flow: row wrap;
     }
-    .cards,.items{
+    .cards{
         width: 47%;
         margin: 0.5em;
+    }
+    .card-body{
+        flex-flow: row nowrap;
     }
     .box,.stat-box{
         width: 80%;
@@ -776,7 +792,7 @@ footer{
         margin: 0.5em;
     }
     .payment-body .payment-box{
-        width: 60%;
+        width: 70%;
         margin: 0.5em;
     }
     /* edit user responsiveness */
@@ -784,6 +800,12 @@ footer{
         width: 47%;
     }
     
+}
+
+@media screen and (max-width : 574px) {
+    .cards,.items,.stat,.payment-box{
+        width: 80%;
+    }
 }
 
 /* functionality styling */

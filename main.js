@@ -82,6 +82,12 @@ document.querySelectorAll('.dash-home').forEach(dash=>{
           document.querySelector('.dashboard').classList.add('current');
      })
 })
+/* home icon returning back to dashoard */
+document.querySelector('.return-home').addEventListener('click',()=>{
+      const current = document.querySelector(".current");
+      current.classList.remove("current");
+      document.querySelector(".dashboard").classList.add("current");
+})
 
 /* dashboard handler */
 document.querySelectorAll('.card-foot').forEach((card,index)=>{
@@ -203,7 +209,7 @@ document.querySelectorAll('.options a').forEach((userOption,index)=>{
 /* Edit user details */
 document.querySelectorAll('.edit-flex-foot').forEach((edit,index)=>{
      edit.addEventListener('click',(e)=>{
-
+          /* created header and footer template */
           const modalHead = `
                <div class="modal-head">
                     <div class="modal-title">
@@ -425,7 +431,7 @@ document.querySelectorAll('.edit-flex-foot').forEach((edit,index)=>{
 
           const closeBtn = document.querySelector(".close-btn");
           const close = document.querySelector(".modal-close");
-
+          /* handling modal event */
           closeBtn.addEventListener("click", () => {
             modal.style.display = "none";
           });
@@ -440,4 +446,5 @@ document.querySelectorAll('.edit-flex-foot').forEach((edit,index)=>{
           
      })
 })
+
 
